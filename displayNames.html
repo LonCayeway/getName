@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Displaying Names</title>
+		<link rel="stylesheet" style type="text/css" href="style.css">
+		
+	</head>
+	<body>
+		<!-- 
+			Get the values for the first and last name from a form 
+		-->	
+	
+				
+		<form>
+			
+			What Is Your First Name? <br>
+			<input id="fname" type="text" value=""><br>
+			
+			What Is Your Last Name? <br>
+			<input type="text" id="lname" value=""><br>
+			
+			<input type="button" value="Submit" onclick="displayName()">
+			
+		</form>
+		
+				
+		<p id="display"> </p>	
+		
+		<script type="text/javascript">
+
+			
+			function displayName(fname, lname){
+				
+				var fname = document.getElementById('fname').value;
+				var lname = document.getElementById('lname').value;
+				
+					
+				document.getElementById('display').innerHTML = 'Your name is ' + fname + ' ' + lname;
+				}
+				
+				displayName (fname.value, lname.value);
+			
+	
+				
+		</script>
+		
+	</body>
+</html>
